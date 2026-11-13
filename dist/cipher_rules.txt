@@ -1,0 +1,5 @@
+IMPERIAL CIPHER CODEX:
+Alphabet space (39 characters): ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_{}
+Each character C at index P is enciphered via affine mapping:
+C = (a * P + b) mod 39
+Known crib: The dispatch begins with the Empress's royal title 'TAYTU_BETUL_'

@@ -1,0 +1,39 @@
+name: "Empress Taytu's Royal Cipher"
+author: "AdwaCTF"
+category: crypto
+description: |-
+  January 1896. At the Siege of Mekelle, Empress Taytu Betul devised the daring
+  strategy to sever the Italian water supply at Enda Eyesus, forcing Major Galliano
+  to capitulate.
+  
+  Her couriers to Ras Makonnen communicated through an ancient imperial affine
+  cipher over the royal 39-character alphabet. A scribal memo notes that all her
+  secret battle decrees open with the royal signature `TAYTU_BETUL_`.
+  
+  Decipher the decree and recover Empress Taytu's flag!
+  
+  Flag format: `AdwaCTF{...}`
+value: 150
+type: dynamic
+flags:
+  - AdwaCTF{74y7u_b37ul_qu33n_0f_l10n5}
+tags:
+  - easy
+  - crypto
+  - classical
+  - affine
+  - dynamic-flag
+files:
+  - output/taytu_dispatch.txt
+  - output/cipher_rules.txt
+generator:
+  enabled: true
+  image: "ghcr.io/azariyasmekonen/empress-taytu-cipher:latest"
+  output_filename: "taytu_dispatch.txt"
+  timeout: 30
+  cache_ttl: 72
+hints:
+  - content: "Use the known crib 'TAYTU_BETUL_' against the first characters of the ciphertext to set up linear congruence equations mod 39 and solve for keys a and b."
+    cost: 15
+state: visible
+version: "0.1"
