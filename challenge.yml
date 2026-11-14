@@ -2,15 +2,11 @@ name: "Empress Taytu's Royal Cipher"
 author: "AdwaCTF"
 category: crypto
 description: |-
-  January 1896. At the Siege of Mekelle, Empress Taytu Betul devised the daring
-  strategy to sever the Italian water supply at Enda Eyesus, forcing Major Galliano
-  to capitulate.
+  During the siege of Mekelle, Empress Taytu severed the Italian water lines
+  and communicated with her generals using a court cipher.
   
-  Her couriers to Ras Makonnen communicated through an ancient imperial affine
-  cipher over the royal 39-character alphabet. A scribal memo notes that all her
-  secret battle decrees open with the royal signature `TAYTU_BETUL_`.
-  
-  Decipher the decree and recover Empress Taytu's flag!
+  Tradition holds that the Empress always signed her orders with her royal name.
+  Can you break the scribal cipher and recover the war council's secret?
   
   Flag format: `AdwaCTF{...}`
 value: 150
